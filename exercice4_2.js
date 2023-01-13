@@ -55,5 +55,6 @@ function register() {
       }
       societe.push(data)
       localStorage.setItem('societe', JSON.stringify(societe));
+      window.location.reload();
     }
   }
