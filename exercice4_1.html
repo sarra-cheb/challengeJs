@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercice4</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+  <style>
+    h1{
+        text-align: center;
+        color:rgb(12, 83, 60);
+    }
+</style>
+  <div class="container mt-5 inscription">
+    <h1>CRUD Employé</h1>
+    <form class="justify-content-center">
+      <div class="mb-3">
+        <label for="nom" class="form-label">First name:</label>
+        <input type="text" class="form-control" id="nom" placeholder="saissisez le nom d'employee ici">
+        <div class="invalid-feedback"> le nom est obligatoire</div>
+      </div>
+      <div class="mb-3">
+        <label for="last_name" class="form-label">Last name:</label>
+        <input type="text" class="form-control" id="last_name" placeholder="saissisez le nom de famille de l'employéé ici">
+        <div class="invalid-feedback"> last name est obligatoire</div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" 
+          placeholder="saissisez l'email de l'employee">
+          <div class="invalid-feedback"> l'email de l'employee est obligatoire</div>
+      </div>
+      <div class="mb-3">
+        <label for="adresse" class="form-label">adress:</label>
+        <input type="text" class="form-control" id="adresse" placeholder="saissisez l'adresse de l'employee ici">
+        <div class="invalid-feedback"> l'adresse de l'employée est obligatoire</div>
+      </div>
+      <div class="mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Company Name:</label>
+        </div>
+        <select class="custom-select" onclick="loadCompanyName(i)" id="select" >
+        </select>
+      </div>
+      
+      <div class="mb-3">
+        <button type="button" id="enregistrer" class="btn btn-success  w-100">enregistrer</button>
+      </div>
+    </form>
+  </div>
+  </div>
+  <script src="exercice4_1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ 
+</body>
+
+</html>
